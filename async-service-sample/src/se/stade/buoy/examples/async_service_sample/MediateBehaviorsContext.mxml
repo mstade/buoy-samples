@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<b:ViewContext xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:b="http://stade.se/buoy/2011"
+               xmlns:models="org.justinjmoses.examples.mediate_behaviours.models.*"
+               xmlns:services="org.justinjmoses.examples.mediate_behaviours.services.*"
+               xmlns="se.stade.buoy.examples.async_service_sample.*">
+
+    <b:DependencyCollection>
+        <b:InstanceList>
+            <services:AsyncService model="{serviceModel}" />
+            <models:ServiceProcessingModel id="serviceModel" />
+        </b:InstanceList>
+    </b:DependencyCollection>
+
+    <b:behaviors>
+        <ServiceStarterBehavior />
+        <ServiceAwareBehavior />
+    </b:behaviors>
+
+</b:ViewContext>

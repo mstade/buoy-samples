@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+         xmlns:s="library://ns.adobe.com/flex/spark" 
+         xmlns:mx="library://ns.adobe.com/flex/mx"
+         width="400" height="300">
+    
+    <s:states>
+        <s:State name="normal" />
+        <s:State name="processing" />
+    </s:states>
+    
+    <s:SkinnableContainer top="0"
+                          width="100%"
+                          height="50"
+                          backgroundColor="#eeeeee">
+        <s:layout>
+            <s:HorizontalLayout paddingTop="10"
+                                paddingBottom="10"
+                                horizontalAlign="center" />
+        </s:layout>
+        
+        <s:Label text="Status: " />
+        
+        <s:Label id="status"
+                 text.normal="free"
+                 text.processing="busy"
+                 color.normal="#888888"
+                 color.processing="#ff0000" />
+        
+    </s:SkinnableContainer>
+    
+    <s:Button id="submit"
+              label="Start"
+              enabled.normal="true"
+              enabled.processing="true"
+              horizontalCenter="0"
+              verticalCenter="0" />
+    
+    <s:SkinnableContainer bottom="0"
+                          width="100%"
+                          height="50"
+                          backgroundColor="#bbbbbb">
+        
+        <s:layout>
+            <s:VerticalLayout horizontalAlign="center"
+                              paddingBottom="10" />
+        </s:layout>
+        
+        <s:Line width="100%">
+            <s:stroke>
+                <s:SolidColorStroke color="#666666" weight="2" />
+            </s:stroke>
+        </s:Line>
+        
+        <mx:ProgressBar indeterminate="true"
+                        label=" "
+                        width="150"
+                        height="5"
+                        includeIn="processing" />
+        
+    </s:SkinnableContainer>
+    
+</s:Group>
