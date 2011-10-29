@@ -10,7 +10,7 @@ package se.stade.buoy.examples.async_service_sample
         private var completedHandler:Function;
         
         [Init]
-        public function register(model:ServiceProcessingModel, view:AsyncLoaderView):void
+        public function register(model:ServiceProcessingModel, view:ApplicationView):void
         {
             this.model = model;
             

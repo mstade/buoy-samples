@@ -32,7 +32,7 @@
     <s:Button id="submit"
               label="Start"
               enabled.normal="true"
-              enabled.processing="true"
+              enabled.processing="false"
               horizontalCenter="0"
               verticalCenter="0" />
     

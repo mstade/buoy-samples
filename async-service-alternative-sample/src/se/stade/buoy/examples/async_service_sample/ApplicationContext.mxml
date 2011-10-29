@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<b:ViewContext xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:b="http://stade.se/buoy/2011"
+               xmlns:service="se.stade.buoy.examples.async_service_sample.domain.*"
+               xmlns="se.stade.buoy.examples.async_service_sample.*">
+
+    <b:DependencyCollection>
+        <b:InstanceList>
+            <service:SlowService />
+        </b:InstanceList>
+    </b:DependencyCollection>
+
+    <b:behaviors>
+        <ServiceBehavior />
+    </b:behaviors>
+
+</b:ViewContext>

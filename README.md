@@ -16,3 +16,7 @@ In the spirit of github, feel free to fork this repository and play around with 
 ### [Async service sample](https://github.com/mstade/buoy-samples/tree/master/async-service-sample)
 
 Simple sample that simulates an asyncronous service call, updating the view in response to changes. This sample also includes the domain logic from a [RobotLegs sample by Justin Moses](https://github.com/justinjmoses/mediate-behaviours-example), to show how domain logic can be re-used, even though the frameworks may change.
+
+### [Async service, alternative sample](https://github.com/mstade/buoy-samples/tree/master/async-service-alternative-sample)
+
+A different take on the previous sample. While this sample is not meant to showcase multiple behavior support, it's meant to highlight buoy's ability to handle events efficiently. No matter if they are dispatched from an element on the DOM or from a property chain inside of a behaior. This sample is using slightly modified logic from Justin's example. It is also not dependant on signals, but rather uses vanilla flash events.

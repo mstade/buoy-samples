@@ -7,7 +7,7 @@ package se.stade.buoy.examples.async_service_sample
     public class ServiceStarterBehavior
     {
         [Click("#submit")]
-        public function callService(view:AsyncLoaderView, service:IAsyncService):void
+        public function callService(view:ApplicationView, service:IAsyncService):void
         {
             service.doSomething().addOnce(function():void
             {

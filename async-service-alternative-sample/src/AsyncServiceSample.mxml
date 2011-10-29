@@ -8,13 +8,13 @@
     
     <fx:Declarations>
         <!--
-        This context is a translation of the sample provided by Justin Moses
-        in his UI mediation example. It re-uses only the domain logic from
-        Justin's example, removing any RobotLegs related logic. 
-        
-        https://github.com/justinjmoses/mediate-behaviours-example
+        This context is a different take of the sample provided by Justin Moses
+        in his UI mediation example. It re-implements the domain logic using
+        regular events instead of signals, and showcases how buoy can be used
+        to hook up event handlers not only to views, but also to dependencies
+        inside of a behavior.
         -->
-        <MediateBehaviorsContext autoAttach="{view}" />
+        <ApplicationContext autoAttach="{view}" />
     </fx:Declarations>
     
     
