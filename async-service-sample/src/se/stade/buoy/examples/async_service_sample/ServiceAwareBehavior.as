@@ -1,9 +1,9 @@
 package se.stade.buoy.examples.async_service_sample
 {
-	import org.justinjmoses.examples.mediate_behaviours.models.ServiceProcessingModel;
-	
-	public class ServiceAwareBehavior
-	{
+    import org.justinjmoses.examples.mediate_behaviours.models.ServiceProcessingModel;
+    
+    public class ServiceAwareBehavior
+    {
         private var model:ServiceProcessingModel;
         
         private var startedHandler:Function;
@@ -29,5 +29,6 @@ package se.stade.buoy.examples.async_service_sample
             model.started.remove(startedHandler);
             model.completed.remove(completedHandler);
         }
-	}
+    }
 }
+

@@ -1,11 +1,11 @@
 package se.stade.buoy.examples.async_service_sample
 {
-	import mx.controls.Alert;
-	
-	import org.justinjmoses.examples.mediate_behaviours.services.IAsyncService;
+    import mx.controls.Alert;
+    
+    import org.justinjmoses.examples.mediate_behaviours.services.IAsyncService;
 
-	public class ServiceStarterBehavior
-	{
+    public class ServiceStarterBehavior
+    {
         [Click("#submit")]
         public function callService(view:AsyncLoaderView, service:IAsyncService):void
         {
@@ -14,5 +14,6 @@ package se.stade.buoy.examples.async_service_sample
                 Alert.show("The service returned.", "Guess what?");
             });
         }
-	}
+    }
 }
+
